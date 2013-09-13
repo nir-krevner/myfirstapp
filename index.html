@@ -1,0 +1,24 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>my first app</title>
+</head>
+<body>
+
+	<button id="set">set</button>
+	<button id="clear">clear</button>
+	<div id="res"></div>
+
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script>
+		$('#set').click(function(){
+			$('#res').prepend(Date.now() + '<br/>');
+		});
+		$('#clear').click(function(){
+			$('#res').empty();
+		});
+	</script>
+
+</body>
+</html>
